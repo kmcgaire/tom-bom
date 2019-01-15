@@ -3,12 +3,11 @@
   "name": "Better PR icons",
   "description": "Replace crappy icons with gud ones",
   "version": "0.1",
-  "permissions": ["https://github.com/*"],
+  "permissions": ["https://github.com/*", "active_tab"],
   "content_scripts": [
     {
       "matches": [
-        "http://*/*",
-        "https://*/*"
+        "https://github.com/*"
       ],
       "js": [
         "content.js"
