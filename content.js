@@ -1,8 +1,7 @@
-var requestChanges = document.getElementsByClassName('octicon octicon-request-changes')
-var arrayLength = requestChanges.length;
+var requestChanges = document.getElementsByClassName('octicon octicon-request-changes text-red')
 
-for (var i = 0; i < arrayLength; i++) {
-    var svg = requestChanges[i];;
+while (requestChanges.length > 0) {
+    var svg = requestChanges[0];
     if (svg && svg.parentElement) {
       var parent = svg.parentElement;
       parent.removeChild(svg);
@@ -17,10 +16,9 @@ for (var i = 0; i < arrayLength; i++) {
 }
 
 var approvedChanges = document.getElementsByClassName('octicon octicon-check text-green')
-var arrayLength = approvedChanges.length;
 
-for (var i = 0; i < arrayLength; i++) {
-    var svg = approvedChanges[i];
+while (approvedChanges.length > 0) {
+    var svg = approvedChanges[0];
     if (svg && svg.parentElement) {
       var parent = svg.parentElement;
       parent.removeChild(svg);
@@ -34,5 +32,5 @@ for (var i = 0; i < arrayLength; i++) {
     }
 }
 
-console.log("Welcome to the future");
+console.log("Welcome to the future")
 
