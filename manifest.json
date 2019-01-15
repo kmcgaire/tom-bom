@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Better PR icons",
+  "description": "Replace crappy icons with gud ones",
+  "version": "0.1",
+  "permissions": ["https://github.com/*"],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
