@@ -34,3 +34,5 @@ for (var i = 0; i < arrayLength; i++) {
     }
 }
 
+console.log("Welcome to the future");
+
